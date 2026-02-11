@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Layout */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.muted {
+  color: #666;
+  margin-top: -8px;
+}
+
+/* Button */
+.btn-area {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #0f2d3d;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* Resume Image */
+.resume-img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile layout */
+.profile-card {
+  padding: 25px;
+}
+
+.profile-top {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #0f2d3d;
+}
+
+/* Text */
+.profile-info h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #0f2d3d;
+}
+
+.line {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.profile-details ul {
+  padding-left: 18px;
+}
+
+.profile-details li {
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+}
